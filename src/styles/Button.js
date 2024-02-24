@@ -19,6 +19,7 @@ export const Button = styled.button`
   &:active {
     box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
     box-shadow: ${({ theme }) => theme.colors.shadowSupport};
+    color: #000;
     transform: scale(0.96);
   }
 
