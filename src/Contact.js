@@ -35,12 +35,12 @@ const Contact = () => {
 
   return (
     <Wrapper>
-      <h2 className="common-heading">Contact page</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74719.08904262018!2d74.69497915976768!3d13.617539029113571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc912ae3b16e37%3A0x2fecb6210917fad7!2sUVA%20MERIDIAN%20AMUSEMENT%20PARK!5e0!3m2!1sen!2sin!4v1667928638197!5m2!1sen!2sin" width="100%" height="800" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      <h2 className="common-heading pt-5">Contact page</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74719.08904262018!2d74.69497915976768!3d13.617539029113571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc912ae3b16e37%3A0x2fecb6210917fad7!2sUVA%20MERIDIAN%20AMUSEMENT%20PARK!5e0!3m2!1sen!2sin!4v1667928638197!5m2!1sen!2sin" width="50%" height="700" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       <div className="container">
         <div className="contact-form">
           <form
-            action="https://formspree.io/f/xyyvlwpp"
+            action="https://formspree.io/f/xoqgwewq"
             method="POST"
             className="contact-inputs">
             <input

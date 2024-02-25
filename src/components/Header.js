@@ -1,31 +1,18 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
-import Nav from "./Nav";
+// import React from "react";
+// import { NavLink } from "react-router-dom";
+// import Nav from "./Nav";
 
-const Header = () => {
-  return (
-    <MainHeader>
-      <NavLink to="/">
-        {/* <img src="./images/logo.png" alt="my logo" /> */}
-        <h2>Aaqib Logo</h2>
-      </NavLink>
-      <Nav />
-    </MainHeader>
-  );
-};
+// const Header = () => {
+//   return (
+//     <header className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+//       <div className="container-fluid">
+//         <NavLink className="navbar-brand" to="/">
+//           <h2 className="pl-5">Aaqib Logo</h2>
+//         </NavLink>
+//         <Nav />
+//       </div>
+//     </header>
+//   );
+// };
 
-const MainHeader = styled.header`
-  padding: 0 4.8rem;
-  height: 10rem;
-  background-color: ${({ theme }) => theme.colors.bg};
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-
-  .logo {
-    height: 5rem;
-  }
-`;
-export default Header;
+// export default Header;

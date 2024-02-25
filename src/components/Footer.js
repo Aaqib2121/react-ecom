@@ -5,79 +5,81 @@ import { Button } from "../styles/Button";
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
-    return (
-        <>
-            <Wrapper>
-                <section className="contact-short">
-                    <div className="grid grid-two-column">
-                        <div>
-                            <h3>Ready to get started?</h3>
-                            <h3>Talk to us today</h3>
-                        </div>
+  return (
+    <>
+      <Wrapper>
+        <section className="contact-short">
+          <div className="grid grid-two-column">
+            <div>
+              <h3>Ready to get started?</h3>
+              <h3>Talk to us today</h3>
+            </div>
 
-                        <div>
-                            <Button className="btn hireme-btn">
-                                <NavLink to="/"> Get Started </NavLink>
-                            </Button>
-                        </div>
-                    </div>
-                </section>
-                {/* footer section */}
+            <div>
+              {/* <Button className="btn hireme-btn">
+                <NavLink to="/"> Get Started </NavLink>
+              </Button> */}
+              <NavLink to="/">
+                <Button>Get Started</Button>
+              </NavLink>
+            </div>
+          </div>
+        </section>
+        {/* footer section */}
 
-                <footer>
-                    <div className="container grid grid-four-column">
-                        <div className="footer-about">
-                            <h3>E-MART SHOPPING</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                        </div>
-                        <div className="footer-subscribe">
-                            <h3>Subscribe to get important updates</h3>
-                            <form action="#">
-                                <input type="email" name="email" placeholder="YOUR E-MAIL" />
+        <footer>
+          <div className="container grid grid-four-column">
+            <div className="footer-about">
+              <h3>E-MART SHOPPING</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div className="footer-subscribe">
+              <h3>Subscribe to get important updates</h3>
+              <form action="#">
+                <input type="email" name="email" placeholder="YOUR E-MAIL" />
 
-                                <input type="submit" value="subscribe" />
-                            </form>
-                        </div>
-                        <div className="footer-social">
-                            <h3>Follow Us</h3>
-                            <div className="footer-social--icons">
-                                <div>
-                                    <FaDiscord className="icons" />
-                                </div>
-                                <div>
-                                    <FaInstagram className="icons" />
-                                </div>
-                                <div>
-                                    <a
-                                        href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                                        target="_blank">
-                                        <FaYoutube className="icons" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="footer-contact">
-                            <h3>Call Us</h3>
-                            <h3>+91 8496952388</h3>
-                        </div>
-                    </div>
+                <input type="submit" value="subscribe" />
+              </form>
+            </div>
+            <div className="footer-social">
+              <h3>Follow Us</h3>
+              <div className="footer-social--icons">
+                <div>
+                  <FaDiscord className="icons" />
+                </div>
+                <div>
+                  <FaInstagram className="icons" />
+                </div>
+                <div>
+                  <a
+                    href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
+                    target="_blank"
+                  >
+                    <FaYoutube className="icons" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="footer-contact">
+              <h3>Call Us</h3>
+              <h3>+91 8496952388</h3>
+            </div>
+          </div>
 
-                    <div className="footer-bottom--section">
-                        <hr />
-                        <div className="container grid grid-two-column dflex">
-                            <p>
-                                @{new Date().getFullYear()} E-MART. All Rights Reserved
-                            </p>
-                            <div>
-                                <p className="two">PRIVACY POLICY</p>
-                                <p className="two">TERMS & CONDITIONS</p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </Wrapper>
-        </>
-    );
+          <div className="footer-bottom--section">
+            <hr />
+            <div className="container grid grid-two-column dflex">
+              <p>@{new Date().getFullYear()} E-MART. All Rights Reserved</p>
+              <div>
+                <p className="two">PRIVACY POLICY</p>
+                <p className="two">TERMS & CONDITIONS</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </Wrapper>
+    </>
+  );
 };
 
 const Wrapper = styled.section`
@@ -130,12 +132,12 @@ const Wrapper = styled.section`
       color: ${({ theme }) => theme.colors.hr};
       height: 0.1px;
     }
-    .dflex{
-          display: flex;
-          justify-content: space-between;
+    .dflex {
+      display: flex;
+      justify-content: space-between;
     }
-    .two{
-        margin-bottom: 2rem;
+    .two {
+      margin-bottom: 2rem;
     }
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {

@@ -8,7 +8,8 @@ import SingleProduct from "./SingleProduct"
 import Cart from "./Cart"
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
-import Header from "./components/Header";
+// import Header from "./components/Header";
+import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ErrorPage from "./ErrorPage";
 
@@ -25,9 +26,10 @@ const App = () => {
       helper: "#8490ff",
 
       bg: "#F6F8FA",
-      footer_bg: "#0a1435",
+      footer_bg: "#1f5156",
       btn: "rgb(98 84 243)",
       border: "rgba(98, 84, 243, 0.5)",
+      colors: "#000",
       hr: "#ffffff",
       gradient:
         "linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%)",
@@ -45,7 +47,8 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <GlobalStyle />
-        <Header />
+        {/* <Header /> */}
+        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />}></Route>
