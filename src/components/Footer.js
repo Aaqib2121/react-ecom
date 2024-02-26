@@ -20,7 +20,7 @@ const Footer = () => {
                 <NavLink to="/"> Get Started </NavLink>
               </Button> */}
               <NavLink to="/">
-                <Button>Get Started</Button>
+                <Button className="shop-button">Get Started</Button>
               </NavLink>
             </div>
           </div>
@@ -30,7 +30,7 @@ const Footer = () => {
         <footer>
           <div className="container grid grid-four-column">
             <div className="footer-about">
-              <h3>E-MART SHOPPING</h3>
+              <h3>GOAT-MART SHOPPING</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
             </div>
             <div className="footer-subscribe">
@@ -90,7 +90,7 @@ const Wrapper = styled.section`
     max-width: 60vw;
     margin: auto;
     padding: 5rem 10rem;
-    background-color: ${({ theme }) => theme.colors.bg};
+    background-color: #f5b921;
     border-radius: 1rem;
     box-shadow: ${({ theme }) => theme.colors.shadowSupport};
     transform: translateY(50%);
@@ -98,6 +98,13 @@ const Wrapper = styled.section`
       justify-self: end;
       align-self: center;
     }
+  }
+  .shop-button {
+    background-color: #1f5156;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
   }
   footer {
     padding: 14rem 0 2rem 0;

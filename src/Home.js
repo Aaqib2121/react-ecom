@@ -5,7 +5,7 @@ import Services from "./components/Services";
 import Trusted from "./components/Trusted";
 const Home = () => {
   const data = {
-    name: "Aaqib Store",
+    name: "GOAT SITE",
   };
   return (
     <>

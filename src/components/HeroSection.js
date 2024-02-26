@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const HeroSection = ({ myData }) => {
   const { name } = myData;
@@ -13,7 +13,11 @@ const HeroSection = ({ myData }) => {
           <div className="col-md-6 order-md-2">
             <div className="hero-section-image">
               <figure>
-                <img src="images/hero.jpg" alt="hero-section-image" className="img-style" />
+                <img
+                  src="images/hero-goat.jpeg"
+                  alt="hero-section-image"
+                  className="img-style"
+                />
               </figure>
             </div>
           </div>
@@ -23,14 +27,14 @@ const HeroSection = ({ myData }) => {
               <h1>{name}</h1>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged.
               </p>
               <NavLink to="/shop">
-                <Button>Shop Now</Button>
+                <Button className="shop-button">Shop Now</Button>
               </NavLink>
             </div>
           </div>
@@ -41,7 +45,7 @@ const HeroSection = ({ myData }) => {
 };
 
 const Wrapper = styled.section`
-  padding: 23rem 0;
+  padding: 24rem 0;
 
   .img {
     min-width: 10rem;
@@ -72,20 +76,30 @@ const Wrapper = styled.section`
   }
   figure::after {
     content: "";
-    width: 50%;
+    width: 45%;
     height: 80%;
-    background-color: rgba(81, 56, 238, 0.4);
+    background-color: #1f5156;
     position: absolute;
-    left: 50%;
+    left: 45%;
     top: -5rem;
     z-index: -1;
   }
   .img-style {
-    width: 80%;
-    height: auto;
+    width: 70%;
+    height: 80%;
+  }
+
+  .shop-button {
+    background-color: #1f5156;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    padding: 15rem 0;
+    
     .row {
       flex-direction: column-reverse;
     }
@@ -93,9 +107,12 @@ const Wrapper = styled.section`
       content: "";
       width: 50%;
       height: 100%;
-      left: 0;
-      top: 10%;
-      background-color: rgba(81, 56, 238, 0.4);
+      left: 40%;
+      top: -4rem;
+      background-color: #1f5156;
+    }
+    .shop-button {
+      margin-bottom: 7rem;
     }
   }
 `;

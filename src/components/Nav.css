@@ -92,8 +92,8 @@
 
 .nav-icon .icon {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 .cart-trolley--link {
   position: relative;
@@ -113,23 +113,24 @@
 .cart-trolley {
   position: relative;
   font-size: 3.2rem;
+  color: #fff;
 }
 
 .cart-total--item {
   position: absolute;
-  background-color: #000;
-  color: #fff;
+  color: #000;
   border-radius: 50%;
   display: grid;
   place-items: center;
   top: -30%;
   left: 70%;
-  background-color: #000;
-  width: 3.7rem;
-  height: 3.7rem;
+  background-color: #f5b921;
+  width: 3.4rem;
+  height: 3.4rem;
   font-size: 1.5rem;
 }
 
+  
 @media screen and (max-width: 960px) {
   .nav-menu {
     display: flex;
@@ -176,4 +177,31 @@
     cursor: pointer;
     color: #ffdd40;
   }
+
+.cart-total--item {
+  top: -40%;
+  left: 93%; /* Adjusted to 50% */
+  transform: translateX(-50%); /* Centering horizontally */
+  background-color: #f5b921;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: #000;
+  display: flex; /* Added */
+  justify-content: center; /* Centering horizontally */
+  align-items: center; /* Centering vertically */
+}
+.cart-trolley {
+    font-size: 3.5rem;
+  }
+.left-items {
+    display: flex;
+    align-items: center;
+    margin-right: 3.5em; /* Adjust margin as needed */
+    justify-content: center; /* Centering horizontally */
+    align-items: center; /* Centering vertically */
+    margin-top: 1rem;
+  }
+  
+
 }
